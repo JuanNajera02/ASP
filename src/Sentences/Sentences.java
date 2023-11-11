@@ -5,7 +5,7 @@ import Exp.Exp;
 public class Sentences {
 
     public enum SentencesType {
-       VARIABLE_EXP, BINARY_EXP, ASIGNACION_EXP, CONST_EXP
+       SENT_SI, SENT_MIENTRAS, SENT_LEER, SENT_ESCRIBIR, SENT_ASIGNAR_VALOR
     }
 
     public SentencesType tagSentences;

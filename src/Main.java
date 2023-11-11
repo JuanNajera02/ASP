@@ -1,29 +1,28 @@
 import Exp.BinaryExp;
 import Exp.IntegerExp;
-import Sentences.SentVar;
+import Exp.VarExp;
 import Exp.StringExp;
 import Exp.Exp;
-import Exp.SentConst;
-import Sentences.SentAsignarValor;
+import Exp.ConstExp;
 
 
 public class Main {
     public static void main(String[] args) {
 
-        SentVar miVariable = new SentVar("miVariable", SentVar.TipoDato.Numero);
+        VarExp miVariable = new VarExp("miVariable", VarExp.TipoDato.Numero);
 
-        SentVar miVariable2 = new SentVar("miVariable2", SentVar.TipoDato.Numero);
+        VarExp miVariable2 = new VarExp("miVariable2", VarExp.TipoDato.Numero);
 
-        SentConst miConstante = new SentConst(
+        ConstExp miConstante = new ConstExp(
                 new IntegerExp(42),
                 "miConstante",
-                SentConst.TipoDato.NUMERO
+                ConstExp.TipoDato.NUMERO
         );
 
 
         Exp expression1 = new BinaryExp(
                 "+",
-                miConstante.getValor(),
+                miConstante.valor,
                 new IntegerExp(3)
         );
 
@@ -57,7 +56,7 @@ public class Main {
             IntegerExp intExp = (IntegerExp) e;
             System.out.println("IntegerExp(" + intExp.value + ")");
         } else if (e.tag == Exp.ExpType.VARIABLE_EXP) {
-            SentVar varExp = (SentVar) e;
+            VarExp varExp = (VarExp) e;
             System.out.println("VariableExp(\"" + varExp.name + "\")");
         } else if (e.tag == Exp.ExpType.BINARY_EXP) {
             BinaryExp binExp = (BinaryExp) e;

@@ -1,10 +1,6 @@
-package Sentences;
+package Exp;
 
-import Exp.Exp;
-import Exp.StringExp;
-import Exp.IntegerExp;
-
-public class SentVar extends Exp {
+public class VarExp extends Exp {
     public enum TipoDato {
         Cadena, Numero
     }
@@ -13,7 +9,7 @@ public class SentVar extends Exp {
     public TipoDato tipoDato;
     public Exp valor;
 
-    public SentVar(String varName, TipoDato tipoDato) {
+    public VarExp(String varName, TipoDato tipoDato) {
         super(ExpType.VARIABLE_EXP);
         this.tipoDato = tipoDato;
         this.name = varName;
@@ -26,8 +22,13 @@ public class SentVar extends Exp {
 
     }
 
-    public Exp getValor() {
-        return this.valor;
+    public VarExp(String varName, TipoDato tipoDato, Exp valor) {
+        super(ExpType.VARIABLE_EXP);
+        this.tipoDato = tipoDato;
+        this.name = varName;
+        this.valor = valor;
     }
+
+
 
 }
