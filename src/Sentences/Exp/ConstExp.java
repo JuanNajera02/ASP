@@ -1,4 +1,4 @@
-package Exp;
+package Sentences.Exp;
 
 public class ConstExp extends Exp {
     public static final String SIGNO_ASIGNACION = "=";

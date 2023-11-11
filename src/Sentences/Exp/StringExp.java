@@ -1,4 +1,4 @@
-package Exp;
+package Sentences.Exp;
 
 public class StringExp extends Exp {
 

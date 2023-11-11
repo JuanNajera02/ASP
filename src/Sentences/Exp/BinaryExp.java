@@ -1,6 +1,4 @@
-package Exp;
-
-import Exp.Exp;
+package Sentences.Exp;
 
 public class BinaryExp extends Exp {
     public String binaryOperator;

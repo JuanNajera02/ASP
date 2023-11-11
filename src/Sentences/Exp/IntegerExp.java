@@ -1,4 +1,4 @@
-package Exp;
+package Sentences.Exp;
 
 public class IntegerExp extends Exp {
     public int value;

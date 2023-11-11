@@ -1,4 +1,6 @@
-package Exp;
+package Sentences.Exp;
+
+import Sentences.Sent.SentAsignarValor;
 
 public class VarExp extends Exp {
     public enum TipoDato {
@@ -7,22 +9,15 @@ public class VarExp extends Exp {
 
     public String name;
     public TipoDato tipoDato;
-    public Exp valor;
+    public SentAsignarValor valor;
 
     public VarExp(String varName, TipoDato tipoDato) {
         super(ExpType.VARIABLE_EXP);
         this.tipoDato = tipoDato;
         this.name = varName;
-
-        if (tipoDato == TipoDato.Numero) {
-            this.valor = new IntegerExp(0);
-        } else if (tipoDato == TipoDato.Cadena) {
-            this.valor = new StringExp("");
-        }
-
     }
 
-    public VarExp(String varName, TipoDato tipoDato, Exp valor) {
+    public VarExp(String varName, TipoDato tipoDato, SentAsignarValor valor) {
         super(ExpType.VARIABLE_EXP);
         this.tipoDato = tipoDato;
         this.name = varName;

@@ -1,9 +1,9 @@
-import Exp.BinaryExp;
-import Exp.IntegerExp;
-import Exp.VarExp;
-import Exp.StringExp;
-import Exp.Exp;
-import Exp.ConstExp;
+import Sentences.Exp.BinaryExp;
+import Sentences.Exp.IntegerExp;
+import Sentences.Exp.VarExp;
+import Sentences.Exp.StringExp;
+import Sentences.Exp.Exp;
+import Sentences.Exp.ConstExp;
 
 
 public class Main {
