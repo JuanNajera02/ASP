@@ -1,5 +1,7 @@
 package Exp;
 
+import Exp.Exp;
+
 public class BinaryExp extends Exp {
     public String binaryOperator;
     public Exp left;
@@ -11,4 +13,7 @@ public class BinaryExp extends Exp {
         this.left = leftExp;
         this.right = rightExp;
     }
+
+
+
 }

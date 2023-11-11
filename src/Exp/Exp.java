@@ -2,7 +2,7 @@ package Exp;
 
 public class Exp {
     public enum ExpType {
-        INTEGER_EXP, STRING_EXP, VARIABLE_EXP, BINARY_EXP
+        INTEGER_EXP, VARIABLE_EXP, BINARY_EXP, CONST_EXP, STRING_EXP //este ultimo no
     }
 
     public ExpType tag;
