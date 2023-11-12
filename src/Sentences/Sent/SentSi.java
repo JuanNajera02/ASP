@@ -10,7 +10,7 @@ public class SentSi extends Sent{
     public static final String ENTONCES = "Entonces";
     public static final String SI_NO = "SiNo";
     public static final String FIN_SI = "FinSi";
-
+    public static final String PUNTO_COMA = ";";
     public String si;
     public String parentesis1;
     public ExpRel expresionRelacional;
@@ -20,6 +20,7 @@ public class SentSi extends Sent{
     public String siNo;
     public Sentences sentencia2;
     public String finSi;
+    public String puntoComa;
 
     public SentSi(ExpRel expresionRelacional, Sentences sentencia1) {
         super(SentType.SENT_SI);
@@ -29,6 +30,8 @@ public class SentSi extends Sent{
         this.parentesis2 = PARENTESIS2;
         this.entonces = ENTONCES;
         this.sentencia1 = sentencia1;
+        this.finSi = FIN_SI;
+        this.puntoComa = PUNTO_COMA;
     }
 
     public SentSi(ExpRel expresionRelacional, Sentences sentencia1, Sentences sentencia2) {
@@ -42,6 +45,7 @@ public class SentSi extends Sent{
         this.siNo = SI_NO;
         this.sentencia2 = sentencia2;
         this.finSi = FIN_SI;
+        this.puntoComa = PUNTO_COMA;
     }
 
 

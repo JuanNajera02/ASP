@@ -9,6 +9,7 @@ public class SentMientras extends Sent{
     public static final String PARENTESIS2 = ")";
     public static final String ENTONCES = "Entonces";
     public static final String FIN_MIENTRAS = "FinMientras";
+    public static final String PUNTO_COMA = ";";
 
     public String mientras;
     public String parentesis1;
@@ -17,6 +18,7 @@ public class SentMientras extends Sent{
     public String entonces;
     public Sentences sentencia;
     public String finMientras;
+    public String puntoComa;
 
     public SentMientras(ExpRel expresionRelacional, Sentences sentencia) {
         super(SentType.SENT_MIENTRAS);
@@ -27,6 +29,7 @@ public class SentMientras extends Sent{
         this.entonces = ENTONCES;
         this.sentencia = sentencia;
         this.finMientras = FIN_MIENTRAS;
+        this.puntoComa = PUNTO_COMA;
     }
 
 }

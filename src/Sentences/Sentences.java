@@ -9,8 +9,15 @@ public class Sentences {
 
     public SentencesType tag;
 
+    public Sentences sentencia;
+
     public Sentences(SentencesType tag) {
         this.tag = tag;
+    }
+
+    public Sentences(SentencesType tag, Sentences sentencia) {
+        this.tag = tag;
+        this.sentencia = sentencia;
     }
 
 }
